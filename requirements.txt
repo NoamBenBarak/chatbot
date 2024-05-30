@@ -1,0 +1,8 @@
+sentence-transformers==2.5.1
+numpy==1.24.4
+pandas==2.0.3
+tqdm==4.66.2
+qdrant-client==1.8.0
+fastapi==0.110.0
+uvicorn==0.28.0
+openai==1.13.3

@@ -19,7 +19,6 @@ class Query(BaseModel):
 
 # Declaration of a message array to save the last messages in the conversation
 messages = []
-# user_questions= [{1: False}, {2: False}, {3:True}, {4:False}, {5:False}]
 
 @app.post("/query")
 def search_query(query: Query):

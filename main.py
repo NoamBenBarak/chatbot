@@ -31,12 +31,13 @@ def search_query(query: Query):
     #combined_message = combine_user_messages(query.message)
 
     """ 
-    Another option that i thought about is this one:
+    Another option that i thought about is this one.
+    This means if the 'role' field for the last element in the array of messages is 'user' - 
+    so the CHATBOT has not answered yet, so I am returning a generic message.
     """
-    if len(messages)>0:
-        if messages[-1]["role"] == "user":
-            chatbot_res =  {"role": "chatbot", "content": "another user msg"}
-            return {"output": "another user msg"}
+    # if len(messages)>0:
+    #     if messages[-1]["role"] == "user":
+    #         return {"output": "another user msg"}
         
 
     # Check if there are already messages to summerize
